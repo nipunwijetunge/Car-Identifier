@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">CAR IDENTIFIER</string>
+    <string name="button_identify_car_make">Identify the car make</string>
+    <string name="button_hints">Hints</string>
+    <string name="button_identify_car_image">Identify the car image</string>
+    <string name="button_advanced_level">Advanced level</string>
+    <string name="activity_identify_car_make">Identify car make</string>
+    <string name="button_identify">Identify</string>
+    <string name="random_car_images">random car images</string>
+    <string name="image_view_logo">logo</string>
+    <string name="textView_dialog">Success</string>
+    <string name="button_ok">Ok</string>
+    <string name="button_identigy">Identify</string>
+    <string name="button_next">next</string>
+    <string name="textview_hints">TextView</string>
+    <string name="editText_hints">Name</string>
+    <string name="button_submit">submit</string>
+    <string name="hint_enter_car_make">Guess car make here</string>
+    <string name="chances_count_label">Wrong Attempts: 0</string>
+    <string name="button_car_image_submit">Submit</string>
+    <string name="car1_lbl">01</string>
+    <string name="car2_lbl">02</string>
+    <string name="car3_lbl">03</string>
+    <string name="score_label">Score : 0</string>
+    <string name="timer_text">Timer</string>
+    <string name="hint_car_01_name">Car 01 name</string>
+    <string name="hint_car_02_name">Car 02 name</string>
+    <string name="hint_car_03_name">Car 03 Name</string>
+
+    <!--Array of car makes-->
+    <string-array name="cars_array">
+        <item>Select an option</item>
+        <item>Audi</item>
+        <item>Bentley</item>
+        <item>BMW</item>
+        <item>Bugatti</item>
+        <item>Chevrolet</item>
+        <item>Dodge</item>
+        <item>Ferrari</item>
+        <item>Koenigsegg</item>
+        <item>Lamborghini</item>
+        <item>Maserati</item>
+        <item>McLaren</item>
+        <item>Mercedes</item>
+        <item>Porsche</item>
+        <item>Tesla</item>
+        <item>Volvo</item>
+    </string-array>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/identify_car_make"
+        android:layout_width="222dp"
+        android:layout_height="60dp"
+        android:onClick="identifyCarMakeLauncher"
+        android:text="@string/button_identify_car_make"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.512"
+        android:background="@drawable/button_bg"/>
+
+    <Button
+        android:id="@+id/hints"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/button_hints"
+        app:layout_constraintBottom_toTopOf="@+id/identify_car_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/identify_car_make"
+        android:background="@drawable/button_bg"
+        android:onClick="hintsChallengeLauncher"/>
+
+    <Button
+        android:id="@+id/identify_car_image"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/button_identify_car_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hints"
+        android:background="@drawable/button_bg"
+        android:onClick="identifyCarImageLauncher"/>
+
+    <Button
+        android:id="@+id/advanced_level"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/button_advanced_level"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/identify_car_image"
+        android:background="@drawable/button_bg"
+        android:onClick="advanceLevelLauncher"/>
+
+    <ImageView
+        android:id="@+id/logo_imageView"
+        android:layout_width="280dp"
+        android:layout_height="270dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/image_view_logo"
+        app:layout_constraintBottom_toTopOf="@+id/identify_car_make"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_main"
+        style="@style/Widget.AppCompat.CompoundButton.Switch"
+        android:layout_width="125dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:drawableStart="@drawable/timer_foreground"
+        android:textSize="18sp"
+        android:textOn="On"
+        android:textOff="Off"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:theme="@style/SCBSwitch"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
